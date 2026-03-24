@@ -57,3 +57,4 @@ Um jogo de xadrez completo com sistema de cronômetro oficial, desenvolvido em N
 ```bash
 git clone https://github.com/seu-usuario/chess-game.git
 cd chess-game
+npm run dev
