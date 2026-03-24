@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Jogo de Xadrez - Sistema Oficial de Cronômetro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>♜ Chess Game ♞</h1>
+        </div>
+        
+        <div class="timers-container">
+            <div class="timer-card white-timer">
+                <div class="timer-label">
+                    <span class="player-icon">♔</span>
+                    <h3>BRANCAS</h3>
+                </div>
+                <div class="timer-display" id="whiteTimer">10:00</div>
+                <button class="timer-button" id="whiteTimerBtn" data-player="white">
+                    ✓ Confirmar Jogada
+                </button>
+            </div>
+            
+            <div class="chessboard-container">
+                <div class="turn-indicator">
+                    <h3>Vez de:</h3>
+                    <div id="turn">Brancas</div>
+                </div>
+                <div class="chessboard" id="chessboard"></div>
+                <button id="resetBtn" class="reset-button">⟳ Novo Jogo</button>
+            </div>
+            
+            <div class="timer-card black-timer">
+                <div class="timer-label">
+                    <span class="player-icon">♚</span>
+                    <h3>PRETAS</h3>
+                </div>
+                <div class="timer-display" id="blackTimer">10:00</div>
+                <button class="timer-button" id="blackTimerBtn" data-player="black">
+                    ✓ Confirmar Jogada
+                </button>
+            </div>
+        </div>
+        
+        <div class="game-info">
+            <div class="move-history">
+                <h3>📜 Histórico de Movimentos</h3>
+                <div id="moveHistory"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
